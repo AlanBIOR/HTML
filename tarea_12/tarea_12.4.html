@@ -31,14 +31,59 @@
 
 <body>
     <header>
-        <h1>Tarea 12.3</h1>
+        <h1>Tarea 12.4</h1>
         <p><a href="index.html">👈 Volver atrás</a></p>
         <hr />
     </header>
 
 
     <main>
+        <form action="" method="get">
+            <h2>Información sobre el producto</h2>
+            <fieldset>
+                <legend>Datos básicos</legend>
+                <p>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" size="50"></input>
+                </p>
+                <p>
+                    <label for="descripcion">Descripción</label><br>
+                    <textarea name="descrip" id="descripcion" cols="50" rows="5"></textarea>
+                </p>
+                <p>
+                    <label for="foto">Foto</label>
+                    <input type="file" name="foto"></input>
+                </p>
+                <p>
+                    <input type="checkbox" name="verific" id="verificar"></input>
+                    <label for="verificar">Añadir contador de visitas</label>
+                </p>
+            </fieldset>
 
+            <fieldset>
+                <legend>Datos económicos</legend>
+                <p>
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" id="precio"> €</input>
+                <label for="impuestos">     Impuestos</label>
+                <select name="impuestos" id="impuestos">
+                    <option value="4">4%</option>
+                    <option value="7">7%</option>
+                    <option value="16">16%</option>
+                    <option value="25">25%</option>
+                </select>
+                </p>
+                <p>
+                    Promoción <br>
+                    <input type="radio" name="promo" value="" id="ninguno"></input>
+                    <label for="ninguno">Ninguno</label><br>
+                    <input type="radio" name="promo" value="gratis" id="Transporte"></input>
+                    <label for="Transporte">Transporte gratuito</label><br>
+                    <input type="radio" name="promo" id="descuento_5%"></input>
+                    <label for="descuento_5%">Descuento 5%</label>
+                </p>
+            </fieldset>
+        </form>
 
     </main>
 
