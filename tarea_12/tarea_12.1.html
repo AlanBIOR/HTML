@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 5 - Texto en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos vistos en la clase 5: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@bienvenidosaez">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+      <h1>Tarea 12.1</h1>
+      <p><a href="index.html">👈 Volver atrás</a></p>
+      <hr />
+    </header>
+
+
+    <main>
+
+      <form action="" name="Formulario de registro - Mi web" method="get" autocomplete="off" enctype="multipart/form-data">
+        <p>
+          <label for="name">Nombre</label>
+          <input type="text" name="nombre" placeholder="José" size="15" autocomplete="off" id="name" maxlength="50">
+        </p>
+        <p>
+          <label for="apelillido">Apellidos</label>
+          <input type="text" name="apellidos" placeholder="Pérez López" size="25" autocomplete="off" id="apellido" maxlength="50">
+        </p>
+        <p>
+          Sexo:<br>
+          <input type="radio" name="genero" value="H" id="hombre"></input>
+          <label for="hombre">Hombre</label><br>
+          <input type="radio" name="genero" value="M" id="mujer"></input>
+          <label for="mujer">Mujer</label>
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="correo" id="email"></input>
+        </p>
+        <p>
+          <label for="poblacion"> Población</label>
+          <select name="genero" name="poblacion"  id="poblacion">
+            <option value>-</option>
+            <option value="Alicante">Alicante</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Valencia">Valencia</option>
+          </select>
+        </p>
+        <p>
+          <label for="descripcion">Descripción</label><br>
+          <textarea name="text_multi" id="descripcion" cols="25" rows="3"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" name="check" id="verificacion" checked></input>
+          <label for="verificacion">Deseo recivir información sobre novedades y ofertas</label>
+        </p>
+        <p>
+          <input type="checkbox" name="check_2" id="verificacion_2"></input>
+          <label for="verificacion_2">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </p>
+        <button>Enviar</button>
+      </form>
+
+    </main>
+
+    <hr>
+    <footer>
+      © Alan Alfonso Rodríguez Ibarra 2024 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
